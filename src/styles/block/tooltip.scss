@@ -4,12 +4,10 @@
   transform: translate(-100%, -50%);
   padding-right: 20px;
 
-  width: max-content;
-
   @extend %number-phone-style;
   color: $color-wite;
 
+  display: none;
   opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: none;
+  transition: opacity 3s;
 }

@@ -1,5 +1,4 @@
 .button {
-  box-sizing: border-box;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -41,7 +40,6 @@
   }
 
   &--primary {
-    box-sizing: border-box;
     height: 56px;
     width: 100%;
     box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);

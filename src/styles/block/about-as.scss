@@ -1,16 +1,18 @@
 .about-as {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
 
   @include onMobile {
     display: block;
   }
 
+  &__text--bold {
+    font-weight: 700;
+  }
+
   &__title {
-    grid-column: 1 / 4;
-    grid-auto-flow: row;
-    text-align: start;
+    display: flex;
 
     @include onMobile {
       margin-bottom: 48px;
@@ -18,12 +20,13 @@
   }
 
   &__description {
-    grid-column: 7 / 13;
+    // grid-column: 7 / 13;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   &__subtitle {
-    margin-bottom: 16px;
-
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;

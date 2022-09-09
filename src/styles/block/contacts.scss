@@ -9,10 +9,12 @@
   }
 
   &__title {
-    margin: 0 auto 68px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
 
     @include onMobile {
-      margin-bottom: 28px;
+      margin-bottom: 52px;
     }
   }
 

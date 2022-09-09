@@ -21,14 +21,17 @@
   &--call {
     position: relative;
     background-image: url("/images/call.svg");
+    transition: opacity 3s;
 
     &:hover .tooltip {
-      @include onMobile {
-        opacity: 0;
-        pointer-events: none;
-      }
+      transition: opacity 3s;
+
+      display: block;
       opacity: 1;
-      pointer-events: all;
+
+      @include onMobile {
+        display: none;
+      }
     }
   }
 

@@ -1,4 +1,6 @@
 .title {
+  display: flex;
+  flex-direction: column;
   width: max-content;
 
   font-weight: 700;
@@ -8,18 +10,29 @@
   color: $color-black;
 
   @include onMobile {
+    gap: 8px;
+    align-items: flex-end;
+    flex-direction: row;
     font-size: 36px;
   }
 }
 
 .title--crown {
+  position: relative;
+  display: inline-block;
+
   &::after {
     content: "";
+    position: absolute;
     display: block;
-    width: 24px;
-    height: 16px;
-    margin: 5px auto 0;
 
-    background: url("/images/crown.svg") center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+
+    width: $width-crown;
+    height: $hieght-crown;
+
+    background: url("/images/crown.svg") center / cover no-repeat;
   }
 }
