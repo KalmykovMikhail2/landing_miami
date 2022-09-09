@@ -2,6 +2,10 @@
   height: 100vh;
   background: url("/images/photos/header.jpg") center / cover;
 
+  &__header-nav {
+    margin-top: 26px;
+  }
+
   &__content {
     @include flex (column);
     justify-content: space-between;
