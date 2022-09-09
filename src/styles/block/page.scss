@@ -18,6 +18,7 @@
   }
 
   &__header {
+    height: 100vh;
     margin-bottom: 104px;
 
     @include onMobile {
