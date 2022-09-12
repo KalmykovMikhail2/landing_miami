@@ -60,31 +60,4 @@
       box-shadow: 0 8px 14px rgba(0, 83, 181, 0.48);
     }
   }
-
-  &--input {
-    height: 48px;
-    width: 100%;
-    padding-left: 16px;
-    
-    background-color: $color-input-background;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: $color-black;
-    border: 2px solid transparent;
-
-    cursor: text;
-
-    &::placeholder {
-      color: $color-placeholder;
-    }
-
-    &:hover {
-      border-color: $color-lite-grey;
-    }
-
-    &:focus {
-      border-color: $color-blue;
-    }
-  }
 }

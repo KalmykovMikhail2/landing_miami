@@ -23,15 +23,33 @@
     background-image: url("/images/call.svg");
     transition: opacity 3s;
 
-    &:hover .tooltip {
-      transition: opacity 3s;
+    &::after {
+      content: "+1 234 555-55-55";
+      width: max-content;
+      padding-right: 20px;
 
-      display: block;
-      opacity: 1;
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+
+      @extend %number-phone-style;
+      color: $color-wite;
+      opacity: 0;
+
+      transform-origin: opacity;
+      transition-duration: 0.3s;
+
+      pointer-events: none;
 
       @include onMobile {
         display: none;
       }
+    }
+
+    &:hover::after {
+      opacity: 1;
+      pointer-events: all;
     }
   }
 

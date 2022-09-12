@@ -1,32 +1,24 @@
 .link {
   text-decoration: none;
-  width: max-content;
-}
-
-.link--blue {
-  color: $color-blue;
   font-weight: 700;
 
-  @include link-after-hover ($color-blue);
-}
-
-.link--grey {
-  color: $color-grey;
-
-  transition: color 0.3s;
-
-  &:hover {
+  &--blue {
     color: $color-blue;
   }
+  
+  &--grey {
+    color: $color-grey;
+  }
+  
+  &--white {
+    color: $color-wite;
+  }
 
-  @include link-after-hover ($color-blue);
-}
+  &--aft-hov-blue {
+    @include link-after-hover ($color-blue);
+  }
 
-.link--white {
-  font-weight: 700;
-  color: $color-wite;
-
-  transition: border-bottom 0.3s;
-
-  @include link-after-hover ($color-wite);
+  &--aft-hov-white {
+    @include link-after-hover ($color-wite);
+  }
 }

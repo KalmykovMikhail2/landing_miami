@@ -36,6 +36,15 @@
     }
   }
 
+  &__link {
+    font-weight: 400;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
   &__details {
     @include flex (column);
     gap: 24px;
